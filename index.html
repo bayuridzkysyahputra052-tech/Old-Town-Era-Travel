@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Town Era Travel - Jakarta Heritage Tours & Transport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Old Town Era <span>Travel</span></div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#packages">Heritage Tours</a>
+            <a href="#transport">Transport Service</a>
+            <a href="#community">Traveler Forum</a>
+            <button id="loginBtn" class="btn-vintage">Sign In / Register</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover the Colonial Era of Batavia</h1>
+            <p>Explore iconic historical landmarks like Museum Fatahillah, Kota Intan Bridge, and the legendary Red Building (Toko Merah) with professional English-speaking guides and seamless private transport.</p>
+            <a href="#packages" class="btn-vintage">Explore Tours & Transport</a>
+        </div>
+    </section>
+
+    <!-- Section: Tour Packages & Prices -->
+    <section id="packages" class="section container">
+        <h2 class="section-title">Jakarta Old Town Heritage Tours</h2>
+        <p class="section-subtitle">Transparent pricing per package featuring Batavia's most historic sites</p>
+
+        <div class="package-grid">
+            <!-- Package 1: Fatahillah Museum -->
+            <div class="card">
+                <img src="fatahillah 2.jpg" alt="Fatahillah Museum">
+                <span class="badge">Heritage Route 1</span>
+                <h3>Fatahillah Museum & Square</h3>
+                <p class="desc">Step inside the former Batavia City Hall (Stadhuis), explore historical dungeons, and ride traditional antique bicycles around the square.</p>
+                <ul class="facilities">
+                    <li>Fatahillah Museum Admission Ticket</li>
+                    <li>Antique Bicycle Rental & Colonial Hat</li>
+                    <li>Private English-Speaking Historian Guide</li>
+                </ul>
+                <div class="price">$15 USD <span>/ person</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Fatahillah Museum Tour', 15)">Book This Tour</button>
+            </div>
+
+            <!-- Package 2: Kota Intan Bridge & Canal -->
+            <div class="card">
+                <img src="jembatan 3.jpg" alt="Kota Intan Bridge">
+                <span class="badge">Heritage Route 2</span>
+                <h3>Canal Walk & Kota Intan Bridge</h3>
+                <p class="desc">Visit Indonesia's oldest suspension bridge built in the 17th century and enjoy a scenic walking tour along the revitalized Kali Besar canal.</p>
+                <ul class="facilities">
+                    <li>Exclusive Access to Kota Intan Bridge Spot</li>
+                    <li>Kali Besar Canal Guided Walking Tour</li>
+                    <li>Traditional Herbal Drink & Local Snacks</li>
+                </ul>
+                <div class="price">$12 USD <span>/ person</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Kota Intan Bridge & Canal Tour', 12)">Book This Tour</button>
+            </div>
+
+            <!-- Package 3: Toko Merah (Red Building) -->
+            <div class="card">
+                <img src="toko merah 3.jpg" alt="Toko Merah">
+                <span class="badge">Heritage Route 3</span>
+                <h3>The Secrets of Toko Merah (Red Building)</h3>
+                <p class="desc">Uncover the history of the 18th-century VOC Governor-General mansion, featuring magnificent Chinese-European architecture and teak wood interiors.</p>
+                <ul class="facilities">
+                    <li>Special Guided Access to Toko Merah</li>
+                    <li>In-depth Batavia Architecture Storytelling</li>
+                    <li>Classic Coffee Voucher at Old Town Cafe</li>
+                </ul>
+                <div class="price">$18 USD <span>/ person</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Toko Merah Historic Tour', 18)">Book This Tour</button>
+            </div>
+
+            <!-- Package 4: All-in-One Complete Bundle -->
+            <div class="card highlight-card">
+                <img src="grid kota tua.jpg" alt="Full Day Old Town Tour">
+                <span class="badge badge-gold">Best Seller • Full Day</span>
+                <h3>Ultimate Batavia: 3 Icons Bundle</h3>
+                <p class="desc">The complete experience covering Museum Fatahillah, Kota Intan Bridge, and Toko Merah in one comprehensive day trip.</p>
+                <ul class="facilities">
+                    <li>All Museum & Landmark Admission Passes</li>
+                    <li>Traditional Betawi Lunch Included</li>
+                    <li>Antique Bike + Private Expert Guide</li>
+                </ul>
+                <div class="price">$35 USD <span>/ person</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Ultimate Batavia 3 Icons Bundle', 35)">Book This Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Transport & Shuttle Services -->
+    <section id="transport" class="section container">
+        <h2 class="section-title">Private Transport & Shuttle Services</h2>
+        <p class="section-subtitle">Comfortable, air-conditioned vehicles with professional drivers for international travelers</p>
+
+        <div class="package-grid">
+            <div class="card">
+                <h3>Airport Transfer (CGK / HLP)</h3>
+                <p class="desc">Direct pickup or drop-off between Soekarno-Hatta / Halim Airport and Jakarta Old Town or your hotel.</p>
+                <div class="price">$25 USD <span>/ car (up to 4 pax)</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Airport Transfer Service', 25)">Book Transport</button>
+            </div>
+            <div class="card">
+                <h3>Full Day City Car Rental</h3>
+                <p class="desc">Private AC car with an English-speaking driver at your disposal for 10 hours around Jakarta.</p>
+                <div class="price">$50 USD <span>/ day</span></div>
+                <button class="btn-vintage full-width" onclick="openBooking('Full Day City Car Rental', 50)">Book Transport</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Community & Live Guide Chat -->
+    <section id="community" class="section container">
+        <h2 class="section-title">Traveler Community & Guide Assistant</h2>
+        <div class="interaction-grid">
+            <!-- Forum -->
+            <div class="box-panel">
+                <h3>Traveler Stories & Meetups</h3>
+                <div class="feed-box" id="forumFeed">
+                    <div class="feed-item">
+                        <strong>Marcus Vance (UK)</strong> <small>• 2 hours ago</small>
+                        <p>Toko Merah architecture is stunning! Highly recommend taking the historic tour here.</p>
+                    </div>
+                </div>
+                <form id="forumForm" class="inline-form">
+                    <input type="text" id="forumInput" placeholder="Share your experience or find travel buddies..." required>
+                    <button type="submit" class="btn-vintage">Post</button>
+                </form>
+            </div>
+
+            <!-- Live Chat Guide -->
+            <div class="box-panel">
+                <h3>Ask Local Guide</h3>
+                <div class="feed-box" id="chatFeed">
+                    <div class="chat-msg bot">Hello! Welcome to Old Town Era Travel. Ask us anything about Museum Fatahillah, Kota Intan Bridge, Toko Merah, or airport transfers!</div>
+                </div>
+                <form id="chatForm" class="inline-form">
+                    <input type="text" id="chatInput" placeholder="Type your question (e.g., dress code, opening hours)..." required>
+                    <button type="submit" class="btn-vintage">Ask</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking History Section -->
+    <section id="riwayatSection" class="section container hidden">
+        <h2 class="section-title">Your Booking & E-Tickets</h2>
+        <div id="bookingHistory" class="history-list"></div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+            <h3>Sign In to Old Town Era Travel</h3>
+            <form id="loginForm">
+                <label>Full Name</label>
+                <input type="text" id="userNameInput" placeholder="Enter your full name" required>
+                <label>Email Address</label>
+                <input type="email" id="userEmailInput" placeholder="name@example.com" required>
+                <button type="submit" class="btn-vintage full-width">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('bookingModal')">&times;</span>
+            <h3 id="modalPkgName">Selected Package</h3>
+            <p id="modalPkgPrice" class="modal-price">$0 USD / person</p>
+            <form id="bookingForm">
+                <label>Tour / Service Date</label>
+                <input type="date" id="visitDate" required>
+                <label>Number of Travelers</label>
+                <input type="number" id="guestCount" min="1" max="20" value="1" required>
+                <div class="total-bar">
+                    Total Amount: <strong id="totalAmount">$0 USD</strong>
+                </div>
+                <button type="submit" class="btn-vintage full-width">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
